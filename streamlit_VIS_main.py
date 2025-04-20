@@ -189,7 +189,7 @@ if lbl_file and qub_file and lbl_hk_file and tab_hk_file:
         colormaps = ['gray', 'viridis', 'hot', 'jet', 'inferno']
         cmap = st.sidebar.selectbox("Select Colormap", options=colormaps, index=0) if colormap_toggle else "gray"
         crop_enabled = st.sidebar.checkbox("Enable Image Cropping", value=False)
-        crop_x_min = st.sidebar.number_input("Crop X Start", 0, samples-1, 0) if crop_enabled else 0
+        crop_x_min = st.sidebar.number_input("Crop X Start", 0, samples-1, 7) if crop_enabled else 7
         crop_x_max = st.sidebar.number_input("Crop X End", crop_x_min+1, samples, samples) if crop_enabled else samples
         crop_y_min = st.sidebar.number_input("Crop Y Start", 0, lines-1, 0) if crop_enabled else 0
         crop_y_max = st.sidebar.number_input("Crop Y End", crop_y_min+1, lines, lines) if crop_enabled else lines
