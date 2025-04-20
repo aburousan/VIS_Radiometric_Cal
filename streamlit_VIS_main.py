@@ -133,7 +133,7 @@ itf_path_dict = {
 }
 irrad_path_dict = {
     "VIS": "data/VIS/DAWN_VIR_VIS_SOLAR_SPECTRUM_V2.TAB",
-    "IR": "data/IR/DAWN_VIR_VIS_SOLAR_SPECTRUM_V2.TAB"
+    "IR": "data/IR/DAWN_VIR_IR_SOLAR_SPECTRUM_V2.TAB"
 }
 def save_temp_file(uploaded_file, mode='wb'):
     suffix = os.path.splitext(uploaded_file.name)[-1]
