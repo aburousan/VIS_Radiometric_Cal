@@ -1,0 +1,30 @@
+PDS_VERSION_ID            = PDS3                                              
+PRODUCT_ID                = "DAWN_VIR_IR_RESP_V2"                             
+RECORD_TYPE               = FIXED_LENGTH                                      
+RECORD_BYTES              = 2048                                              
+FILE_RECORDS              = 432                                               
+PRODUCER_FULL_NAME        = "M. C. DE SANCTIS"                                
+PRODUCER_INSTITUTION_NAME = "ISTITUTO NAZIONALE DI ASTROFISICA"               
+PRODUCT_CREATION_TIME     = 2015-11-03T15:10:16.150                           
+INSTRUMENT_HOST_NAME      = "DAWN"                                            
+INSTRUMENT_HOST_ID        = "DAWN"                                            
+DATA_SET_ID               = {"DAWN-A-VIR-3-RDR-IR-VESTA-SPECTRA-V2.0",        
+                             "DAWN-A-VIR-3-RDR-IR-CERES-SPECTRA-V1.0"}        
+^ARRAY                    = "DAWN_VIR_IR_RESP_V2.DAT"                         
+/* Description of Object in File */                                           
+OBJECT                    = ARRAY                                             
+  NAME                    = "IR-RESPONSIVITY"                                 
+  INTERCHANGE_FORMAT      = BINARY                                            
+  AXES                    = 2                                                 
+  AXIS_ITEMS              = (432,256)                                         
+  AXIS_NAME               = ("BAND","SAMPLE")                                 
+  AXIS_UNIT               = ("DIMENSIONLESS","DIMENSIONLESS")                 
+  OBJECT                  = ELEMENT                                           
+    NAME                  = "PIXEL"                                           
+    DATA_TYPE             = IEEE_REAL                                         
+    BYTES                 = 8                                                 
+    DESCRIPTION           = "DAWN-VIR IR responsivity in                      
+                             (DN*m^2*um*sterad)/(W*s)"                        
+  END_OBJECT              = ELEMENT                                           
+END_OBJECT                = ARRAY                                             
+END                                                                           

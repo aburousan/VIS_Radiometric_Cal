@@ -1,0 +1,44 @@
+PDS_VERSION_ID            = PDS3                                              
+PRODUCT_ID                = "DAWN_VIR_VIS_SOLAR_SPECTRUM_V2"                  
+RECORD_TYPE               = FIXED_LENGTH                                      
+RECORD_BYTES              = 14                                                
+FILE_RECORDS              = 432                                               
+PRODUCER_FULL_NAME        = "A. CORADINI"                                     
+PRODUCER_INSTITUTION_NAME = "ISTITUTO NAZIONALE DI ASTROFISICA"               
+PRODUCT_CREATION_TIME     = 2015-11-03T15:10:16.325                           
+INSTRUMENT_HOST_NAME      = "DAWN"                                            
+INSTRUMENT_HOST_ID        = "DAWN"                                            
+DATA_SET_ID               = {"DAWN-A-VIR-3-RDR-VIS-VESTA-SPECTRA-V2.0",       
+                             "DAWN-A-VIR-3-RDR-VIS-CERES-SPECTRA-V1.0"}       
+^TABLE                    = "DAWN_VIR_VIS_SOLAR_SPECTRUM_V2.TAB"              
+OBJECT                    = TABLE                                             
+  INTERCHANGE_FORMAT      = ASCII                                             
+  ROWS                    = 432                                               
+  ROW_BYTES               = 14                                                
+  COLUMNS                 = 1                                                 
+  OBJECT                  = COLUMN                                            
+    NAME                  = "SPECTRAL IRRADIANCE"                             
+    DATA_TYPE             = ASCII_REAL                                        
+    UNIT                  = "W/(m**2*micron)"                                 
+    START_BYTE            = 1                                                 
+    BYTES                 = 12                                                
+    FORMAT                = "F12.7"                                           
+    DESCRIPTION           = "Solar spectrum irradiance for the VIS            
+                             channel, obtained from the convolution           
+                             of the Cebola+Kurucz spectrum with VIR           
+                             spectrum resolution using the                    
+                             ENVI_RESAMPLE_SPECTRA procedure.                 
+                             Each row corresponds to a single VIS             
+                             band of the VIR instrument, as defined           
+                             in product                                       
+                             DAWN_VIR_VIS_HIGHRES_SPECAL_V2                   
+                             The Cebula+Kurucz solar spectrum was             
+                             obtained from the Renewable Resource             
+                             Data Center of the National Renewable            
+                             Energy Laboratory, and is an Air Mass            
+                             Zero (AM0) spectrum derived from the             
+                             combination of solar spectrum data from          
+                             KURUCZETAL1984 and CEBULAETAL1996."              
+  END_OBJECT              = COLUMN                                            
+END_OBJECT                = TABLE                                             
+END                                                                           
